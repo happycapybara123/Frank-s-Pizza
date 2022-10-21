@@ -1,0 +1,332 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+ 
+
+.nav_bar{
+    display: flex;
+    background-color: #b2222c;
+    justify-content: space-between;
+    color: white;
+    white-space: nowrap;
+    filter: drop-shadow();
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ;
+    margin-bottom: 5%;
+
+}
+
+@media only screen and (min-width: 701px) {
+    /* hide the hamburger */
+    .hamburger {
+      display: none;
+    }
+    /* show all the nav-buttons */
+    .page_link {
+      display: block;
+    }
+  }
+  /* if browser window is small (max-width) */
+  
+  @media only screen and (max-width: 700px) {
+    /* show everything with the hamburger class */
+    .hamburger {
+      display: block;
+    }
+    /* hide all the nav-buttons */
+    .page_link {
+      display: none;
+    }
+  }
+
+.ham {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+  }
+
+.hamburger{
+    margin-right: 2%;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.page_link{
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+.page_link:hover{
+    color: rgb(255, 221, 0)
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border-radius:4px;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92b879;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.vl {
+    border-left: 1px solid green;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%
+  }
+
+.order_bar {
+    display: flex;
+    margin-right: 20%;
+    margin-left:20%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.start_order {
+    display: flex;
+    align-items: center;
+    color: #b2222c;
+    font-weight: 900;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-bottom: 2%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myButton2 {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+	font-size:16px;
+	padding:6px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.specials{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.special1{
+    display: flex;
+    background-image: url(pizza-and-wings.png);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+.special1desc{
+    background-color: lightgray;
+    opacity: 80%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 4%;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.order_button1{
+    display: flex;
+    align-self: flex-end;
+    order: 1;
+    margin-top: 65%;
+    margin-right: 5%;
+}
+
+.specials23{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.special2{
+    display: flex;
+    background-image: url(cannolis.jpeg);
+    background-size: cover;
+    width: 300px;
+    height: 195px;
+    flex-direction: column;
+    margin-right: 1%;
+}
+
+.special2desc{
+    background-color: lightgray;
+    opacity: 80%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.order_button2{
+    display: flex;
+    align-self: flex-end;
+    order: 1;
+    margin-top: 34%;
+    margin-right: 4%;
+}
+
+.special3{
+    display: flex;
+    background-image: url(pizza-and-soda.png);
+    background-size: cover;
+    width: 300px;
+    height: 195px;
+    flex-direction: column;
+    margin-right: 1%;
+    margin-top: 4%;
+}
+
+.special3desc{
+    background-color: lightgray;
+    opacity: 80%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.order_button3{
+    display: flex;
+    align-self: flex-end;
+    order: 1;
+    margin-top: 28%;
+    margin-right: 4%;
+}
+
+.catering{
+    background-color: lightgrey;
+    margin-top: 4%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cater_info{
+    text-align: center;
+}
+
+.myButton3 {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+	font-size:10px;
+	padding:6px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton3:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+.learn_button{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20%;
+}
+
+.two_icon{
+    display: flex;
+    
+}
